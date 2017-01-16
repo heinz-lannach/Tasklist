@@ -20,12 +20,12 @@ public class Taskliste {
         // TODO code application logic here
        // System.out.println("hello world");
        System.out.println("Task 1");
+       System.out.println("Task 2");
        System.out.println("");
        System.out.println("");
-       System.out.println("Task2");
-       System.out.print("geben sie 1 oder 2 (als Zahl) ein!");
-       new Scanner(System.in).nextInt();
-       
+       System.out.print("geben sie 1 oder 2 (als Zahl) ein!:");
+       int He_Test = new Scanner(System.in).nextInt();
+       System.out.println("Sie haben " + He_Test + " ausgewählt");
     }
 
 }
