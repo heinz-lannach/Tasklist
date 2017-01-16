@@ -41,6 +41,8 @@ public class Taskliste
             System.out.println("");
             System.out.println("");
             System.out.println("0 .... Programm beenden");
+            System.out.println("-1 Task hinzufügen");
+            System.out.println("-2 Task löschen");          
             System.out.print("geben sie 1 oder 2 (als Zahl) ein!:");
 
             try
@@ -50,6 +52,19 @@ public class Taskliste
                 {
                     System.out.println("Programm beendet");
                     return;
+                }
+                else if (He_eingabe1 == -1)
+                {
+                    System.out.println("Bitte Task eingeben: ");
+                    String He_Eingabe2 = new Scanner(System.in).nextLine();
+                    tasks.add(He_Eingabe2);
+                }
+                 else if (He_eingabe1 == -2)
+                {
+                    System.out.println("Bitte Task eingeben: ");
+                    int He_Eingabe3 = new Scanner(System.in).nextInt()-1;
+                  //  tasks.add(He_Eingabe2);
+                    tasks.remove(He_Eingabe3);
                 }
                 else if (He_eingabe1 < 1 || He_eingabe1 > 2)
                 {
