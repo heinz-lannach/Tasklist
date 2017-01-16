@@ -5,6 +5,7 @@
  */
 package taskliste;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -26,16 +27,23 @@ public class Taskliste
         System.out.println("");
         System.out.println("");
         System.out.print("geben sie 1 oder 2 (als Zahl) ein!:");
-        int He_eingabe1 = new Scanner(System.in).nextInt();
-        if (He_eingabe1 < 0 || He_eingabe1 > 2)
+
+        try
         {
-            System.out.println("verbotene Eingabe");
-        }
-        else
-        {
-            System.out.println("Sie haben " + He_eingabe1 + " ausgewählt");
-    
+            int He_eingabe1 = new Scanner(System.in).nextInt();
+            if (He_eingabe1 < 0 || He_eingabe1 > 2)
+            {
+                 System.out.println("verbotene Zahl");
+            }             
+            else
+            {
+                System.out.println("Sie haben " + He_eingabe1 + " ausgewählt");
             }
+        }
+        catch (InputMismatchException error) // Variablen definition 
+        {
+              System.out.println("Dieser Text kann nicht behandetlt werden");
+        }
     }
 
 }
