@@ -5,6 +5,8 @@
  */
 package taskliste;
 
+import java.util.Scanner;
+
 /**
  *
  * @author bfiwest
@@ -21,6 +23,8 @@ public class Taskliste {
        System.out.println("");
        System.out.println("");
        System.out.println("Task2");
+       System.out.print("geben sie 1 oder 2 (als Zahl) ein!");
+       new Scanner(System.in).nextInt();
        
     }
 
