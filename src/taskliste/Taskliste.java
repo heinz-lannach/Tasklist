@@ -25,13 +25,28 @@ public class Taskliste
         tasks.add("Einkaufen");
         tasks.add("Vignette");
         tasks.add("Putzen");
+        
+            System.out.println("Taskliste");
+            System.out.println("");
+            System.out.println("1 .... Task auflisten");
+            System.out.println("2 .....Task hinzufügen");
+            System.out.println("3 .... Task löschen"); 
+            System.out.println("4 .....Programm beenden");
+            System.out.println("");    
+            System.out.print("Bitte Option wählen: "); 
+            int option = new Scanner(System.in).nextInt();
+        
+        
+        
+        
         while (true)
         {
             // TODO code application logic here
             // System.out.println("hello world");
          //   System.out.println("Task 1");
          //   System.out.println("Task 2");
-         
+            System.out.println("Einen Task wählen: ");
+            System.out.println(""); 
             int i = 1;
             for(String element : tasks)
             {
