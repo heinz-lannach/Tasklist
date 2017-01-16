@@ -16,7 +16,12 @@ public class Taskliste {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("hello world");
+       // System.out.println("hello world");
+       System.out.println("Task 1");
+       System.out.println("");
+       System.out.println("");
+       System.out.println("Task2");
+       
     }
-    
+
 }
